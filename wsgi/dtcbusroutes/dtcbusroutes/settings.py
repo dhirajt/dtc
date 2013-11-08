@@ -2,6 +2,8 @@
 import os
 import os.path
 
+import urlparse
+
 PROJECT_ROOT = os.path.dirname(os.path.dirname(__file__))
 
 DEBUG = True

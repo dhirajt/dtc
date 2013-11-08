@@ -6,7 +6,7 @@ import urlparse
 
 PROJECT_ROOT = os.path.dirname(os.path.dirname(__file__))
 
-DEBUG = True
+DEBUG = False
 TEMPLATE_DEBUG = DEBUG
 
 ADMINS = (

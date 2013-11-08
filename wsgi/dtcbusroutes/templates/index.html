@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1.0, maximum-scale=1">
+    <meta name="description" content="Find DTC bus routes">
+    <meta name="author" content="Dhiraj Thakur">
+    <meta name="keywords" content="dtc, bus, delhi bus, bus routes">
+
+    <link href="{{ STATIC_URL }}css/modern.css" rel="stylesheet">
+    <link href="{{ STATIC_URL }}css/modern-responsive.css" rel="stylesheet">
+    <link href="{{ STATIC_URL }}css/jquery.autocomplete.css" rel="stylesheet">
+
+    <script type="text/javascript" src="{{ STATIC_URL }}js/jquery19.js"></script>
+    <script type="text/javascript" src="{{ STATIC_URL }}js/jquery.mousewheel.js"></script>
+    <script type="text/javascript" src="{{ STATIC_URL }}js/tooltip.js"></script>
+    <!--<script type="text/javascript" src="{{ STATIC_URL }}js/dropdown.js"></script>
+    <script type="text/javascript" src="{{ STATIC_URL }}js/accordion.js"></script>
+    <script type="text/javascript" src="{{ STATIC_URL }}js/buttonset.js"></script>
+    <script type="text/javascript" src="{{ STATIC_URL }}js/carousel.js"></script>
+    <script type="text/javascript" src="{{ STATIC_URL }}js/input-control.js"></script>
+    <script type="text/javascript" src="{{ STATIC_URL }}js/pagecontrol.js"></script>
+    <script type="text/javascript" src="{{ STATIC_URL }}js/slider.js"></script>
+    <script type="text/javascript" src="{{ STATIC_URL }}js/tile-slider.js"></script>
+    <script type="text/javascript" src="{{ STATIC_URL }}js/tile-drag.js"></script>-->
+    <script type="text/javascript" src="{{ STATIC_URL }}js/dialog.js"></script>
+    <script type="text/javascript" src="{{ STATIC_URL }}js/busno.js"></script>
+    <script type="text/javascript" src="{{ STATIC_URL }}js/jquery.autocomplete.min.js"></script>
+
+    {% block js %}
+    
+    {% endblock %}
+    
+    <title>{% block title %}DTC Bus Routes{% endblock %}</title>
+
+    <style>
+    
+    
+      .container {
+        height: 100%;
+        padding-top:10px;
+        padding-left:6%;
+      }
+      
+      html {
+        position: relative;
+        min-height: 100%;
+      }
+      
+      body {
+        margin: 0 0 80px; /* bottom = footer height */
+      }
+    
+      #footer{
+        height: 65px; 
+        width:100%;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        background-color: rgb(228, 237, 245);
+     }
+      
+      #footer a{
+        color: rgb(82, 83, 85);
+        text-decoration:none;
+      }
+      #footer a:hover{
+      
+        text-decoration:underline;        
+      }
+            
+      {% block css %}
+      
+      
+      
+      {% endblock %}
+    
+    </style>
+
+</head>
+<body class="modern-ui" onload=" ">
+    <div class="page secondary">
+        <div class="page-header">
+            <div class="page-header-content">
+                <h1>DTC <a href="{% url home %}"><span style="font-size:45px; color:#91DB39" class="icon-bus"></span></a>
+                Routes
+                </h1>
+            </div>
+        </div>
+        
+        {% block body %}
+      
+        {% endblock %}
+        
+        
+     
+    </div>
+      
+      {% block share %}
+      
+      {% endblock %}
+     
+    <div id="footer">
+    
+      <div class="container offset6">
+      &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+      <a href="http://www.djangoproject.com/"><img src="{{ STATIC_URL }}images/djimg.gif" border="0" alt="A Django project." title="A Django project." /></a><br />     
+       <a href="https://github.com/dhirajt/dtc-bus-routes/blob/master/LICENCE">License</a>
+       | <a href="https://github.com/dhirajt/dtc-bus-routes/blob/master/DISCLAIMER">Disclaimer</a> | <a href="https://github.com/dhirajt/dtc-bus-routes/issues">Bug Reports</a>
+      </div>
+    </div>
+    
+    </body>
+    
+</html>

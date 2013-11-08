@@ -15,6 +15,8 @@ ADMINS = (
 
 MANAGERS = ADMINS
 
+ 
+DATABASES = {}
 if 'OPENSHIFT_MYSQL_DB_URL' in os.environ:
     url = urlparse.urlparse(os.environ.get('OPENSHIFT_MYSQL_DB_URL'))
  

@@ -1,0 +1,16 @@
+# Compiled Source  
+*.pyc
+
+# Files
+local_settings.py
+
+# Directories
+ve/
+rost/migrations
+
+# Temp Files
+*.py~
+*.html~
+*.*~
+*~
+*.go*~

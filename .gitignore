@@ -52,3 +52,18 @@ nosetests.xml
 .project
 .pydevproject
 
+# Files
+local_settings.py
+
+# Directories
+ve/
+rost/migrations
+
+# Temp Files
+*.py~
+*.html~
+*.*~
+*~
+*.go*~
+
+
